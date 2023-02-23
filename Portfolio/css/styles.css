@@ -1,0 +1,130 @@
+/*
+Student Name: Henry Rudisill
+File Name: template.html
+Date: 02/21/2023
+*/
+
+/*
+CSS Reset
+*/
+body, header, nav, main, footer, h1, h2
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*
+Style rules for body and images
+*/
+body
+{
+    background-color: #9CC5A1;
+}
+
+img
+{
+    max-width: 100%;
+    display: block;
+    border-radius: 25px;
+}
+
+.portrait
+{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 25%;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+/*
+Style rules for mobile viewport
+*/
+
+/*
+Style Rules for tablet-desktop
+*/
+
+
+/*
+Style rules for header content
+*/
+header
+{
+    text-align: center;
+    background-color: #216869;
+    color: #DCE1DE;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+}
+/*
+Style rules for nav content
+*/
+nav
+{
+    background-color: #49A078;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    color: #DCE1DE;
+    padding: 1%;
+    font-family: Rubik, sans-serif;
+}
+nav ul
+{
+    list-style: none;
+    text-align: center;
+    color: #DCE1DE;
+}
+
+nav li
+{
+    text-decoration: none;
+    color: #DCE1DE;
+    display: inline-block;
+}
+nav li a
+{
+    text-decoration: none;
+    color: #DCE1DE;
+}
+
+/*
+Style rules for main content
+*/
+main
+{
+    padding-top: 3%;
+    text-decoration: none;
+    color: #1F2421;
+    font-family: Oxygen, Helvetica, sans-serif;
+}
+
+main ul
+{
+    list-style: none
+}
+
+main a
+{
+    text-decoration: none;
+    color: #216869;
+    font-weight: bold;
+}
+
+
+/*
+Style Rules for footer content
+*/
+footer
+{
+    font-family: Oxygen, Helvetica, sans-serif;
+}
+footer a
+{
+    text-decoration: none;
+    color: #216869;
+    font-weight: bold;
+}
