@@ -43,7 +43,7 @@ Style rules for mobile viewport
 */
 @media screen and (min-width: 486px) {
     #map {
-        width: 400px;
+        display: none;
     }
 
     nav li {
@@ -58,11 +58,16 @@ Style Rules for tablet-desktop
         background: linear-gradient(#49A078, #9CC5A1);
     }
 
-    #links {
+    #links li a{
         display: inline-block;
+        background-color: #49A078;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
-    #links:hover {
-        background: #49A078;
+    #links li a:hover {
+        background: #DCE1DE;
     }
 }
 
