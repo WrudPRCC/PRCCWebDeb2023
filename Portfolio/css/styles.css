@@ -44,6 +44,7 @@ Style rules for mobile viewport
 @media screen and (min-width: 486px) {
     .tab-desk {
         display: none;
+        visibility: hidden;
     }
 
     #links article {
