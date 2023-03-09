@@ -63,6 +63,7 @@ Style Rules for tablet-desktop
 
     .mobile {
         display: none;
+        visibility: hidden;
     }
     
     nav {
@@ -71,6 +72,14 @@ Style Rules for tablet-desktop
 
     #links article:hover {
         background: #DCE1DE;
+    }
+    
+    #portrait {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 36%;
+        max-width: 300px;
+        max-height: 400px;
     }
 }
 
