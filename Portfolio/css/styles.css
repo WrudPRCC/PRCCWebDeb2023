@@ -48,9 +48,8 @@ Style rules for mobile viewport
     }
 
     #links article {
-        padding: none;
-        margin: none;
-        background-color: none;
+        padding: 0;
+        margin: 0;
     }
     nav li {
         padding: 1%;
@@ -89,7 +88,7 @@ Style Rules for tablet-desktop
 }
 
 /* Style rules for Large Desktop */
-@media screen and (min-width 1280px) {
+@media screen and (min-width: 1280px) {
     .tab-desk {
         display: block;
         visibility: visible;
