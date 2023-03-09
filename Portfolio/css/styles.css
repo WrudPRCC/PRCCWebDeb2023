@@ -61,6 +61,11 @@ Style Rules for tablet-desktop
 */
 @media screen and (min-width: 768px) {
 
+    .tab-desk {
+        visibility: visible;
+        display: block;
+    }
+    
     .mobile {
         display: none;
         visibility: hidden;
@@ -83,6 +88,26 @@ Style Rules for tablet-desktop
     }
 }
 
+/* Style rules for Large Desktop */
+@media screen and (min-width 1280px) {
+    .tab-desk {
+        display: block;
+        visibility: visible;
+    }
+    
+    .mobile {
+        display: none;
+        visibility: hidden;
+    }
+    
+    nav {
+        background: linear-gradient(#49A078, #9CC5A1);
+    }
+
+    #links article:hover {
+        background: #DCE1DE;
+    }
+}
 
 /*
 Style rules for header content
