@@ -29,13 +29,11 @@ img
     border-radius: 25px;
 }
 
-.portrait
+#portrait
 {
     padding-top: 2%;
     padding-bottom: 2%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 36%;
     max-width: 300px;
     max-height: 400px;
 }
@@ -43,10 +41,30 @@ img
 /*
 Style rules for mobile viewport
 */
+@media screen and (min-width: 486) {
+    #map {
+        width: 400px;
+    }
 
+    nav li {
+        padding: 1%;
+    }
+}
 /*
 Style Rules for tablet-desktop
 */
+@media screen and (min-width: 768) {
+    nav {
+        background: linear-gradient(#49A078, #9CC5A1);
+    }
+
+    #links {
+        display: inline-block;
+    }
+    #links:hover {
+        background: #49A078;
+    }
+}
 
 
 /*
