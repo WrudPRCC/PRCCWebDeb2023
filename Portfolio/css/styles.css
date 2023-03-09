@@ -41,7 +41,7 @@ img
 /*
 Style rules for mobile viewport
 */
-@media screen and (min-width: 486) {
+@media screen and (min-width: 486px) {
     #map {
         width: 400px;
     }
@@ -53,7 +53,7 @@ Style rules for mobile viewport
 /*
 Style Rules for tablet-desktop
 */
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
     nav {
         background: linear-gradient(#49A078, #9CC5A1);
     }
