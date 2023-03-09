@@ -46,6 +46,11 @@ Style rules for mobile viewport
         display: none;
     }
 
+    #links article {
+        padding: none;
+        margin: none;
+        background-color: none;
+    }
     nav li {
         padding: 1%;
     }
@@ -58,15 +63,7 @@ Style Rules for tablet-desktop
         background: linear-gradient(#49A078, #9CC5A1);
     }
 
-    #links li a{
-        display: inline-block;
-        background-color: #49A078;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-    #links li a:hover {
+    #links article:hover {
         background: #DCE1DE;
     }
 }
@@ -139,7 +136,15 @@ main a
     font-weight: bold;
 }
 
-
+article {
+    display: inline-block;
+        background-color: #49A078;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin: 1%
+}
 /*
 Style Rules for footer content
 */
