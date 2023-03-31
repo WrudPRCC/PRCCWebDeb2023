@@ -21,15 +21,17 @@ Date: 02/21/2023
 
     <header>
         <h1>Henry Rudisill</h1>
-        <h2> "Every Step is a New Adventure!"</h2>
+        <figure>
+            <figcaption>"Every Step is a New Adventure!"</figcaption>
+        <figure>
     </header>
 
     <nav>
         <ul>
-            <li> <a href="index.html">Home</a></li> &nbsp; &nbsp;
-            <li><a href="past.html">Past Work</a></li> &nbsp; &nbsp;
-            <li><a href="references.html">References</a></li> &nbsp; &nbsp;
-            <li> <a href="links.html">Website Links</a></li> &nbsp; &nbsp;
+            <li> <a href="index.html">Home</a></li> <br>
+            <li><a href="past.html">Past Work</a></li> <br>
+            <li><a href="references.html">References</a></li> <br>
+            <li> <a href="links.html">Website Links</a></li> <br>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -37,10 +39,41 @@ Date: 02/21/2023
 
 <!--This main element will provide all of the important information for the page-->
     <main>
-        <div id="Past Work">
+        <section>
             This page shows examples of my past work! If you want to take a look around my past projects, you'll find them on the <a href="links.html">Website Links</a> page!
-            
-        </div>
+        <!--table for Tab-Desk class-->
+            <table class="tab-desk">
+            <thead>
+                <tr>
+                    <td>Website Name</td>
+                    <td>Website Image</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PRCC Portfolio Website</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Fitness Website (TBA)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wild Rescues Website (TBA)</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--pseudotable for mobile class-->
+        <ul class="mobile">
+            <li><p>PRCC Portfolio Website</p>
+                <img src="images/prccportfolio.jpg" alt="PRCC Portfolio"></li>
+            <li><p>Fitness Website</p>
+                <img src="images/fitnesswebsite.jpg" alt="Fitness"></li>
+            <li><p>Wild Rescues Website</p>
+                <img src="images/wildrescueswebsite.jpg" alt="Wild Rescues"></li>
+        </ul>
+    </section>
     </main>
 <br>
 <br>
