@@ -41,7 +41,7 @@ img
 /*
 Style rules for mobile viewport
 */
-@media screen and (min-width: 486px) {
+@media screen and ( max-width: 767px) {
     .tab-desk {
         display: none;
     }
@@ -50,7 +50,7 @@ Style rules for mobile viewport
         padding: 0;
         margin: 0;
     }
-    
+
     nav li {
         padding: 1%;
     }
@@ -63,7 +63,8 @@ Style Rules for tablet-desktop
     .mobile {
         display: none;
     }
-    
+
+
     nav {
         background: linear-gradient(#49A078, #9CC5A1);
     }
@@ -84,6 +85,7 @@ Style Rules for tablet-desktop
     max-width: 300px;
     max-height: 400px;
 }
+
 }
 
 
@@ -168,6 +170,7 @@ footer a
     font-weight: bold;
 }
 
+/* style for links id */
 #links article {
     display: inline-grid;
     background-color: #49A078;
@@ -176,4 +179,50 @@ footer a
     grid-column: 1/span 2;
     grid-row: 1/span 2;
     grid-gap: 20px 20px;
+}
+
+/* Sty;e rules for table */
+table {
+    border: 15px solid #216869;
+}
+
+thead {
+    background-color: #216869;
+}
+
+tbody {
+    background-color: #9CC5A1;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #49A078
+}
+
+
+/* Style rules for forms */
+form {
+    margin: 2%;
+}
+
+fieldset {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+}
+
+
+fieldset > legend {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #216869;
+    border: none;
+    border-radius: 10px;
+    padding: 2%;
+    display: inline-block;
+    color: #DCE1DE;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px
 }
