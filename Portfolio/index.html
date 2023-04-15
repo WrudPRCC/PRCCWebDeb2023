@@ -5,13 +5,6 @@ File Name: index.html
 Date: 01/23/2023
 -->
 <html lang="en">
-<head><!DOCTYPE html>
-<!--
-Student Name: Henry Rudisill
-File Name: index.html
-Date: 01/23/2023
--->
-<html lang="en">
 <head>
     <title>Home</title>
     <meta charset="utf-8">
@@ -37,7 +30,7 @@ Date: 01/23/2023
     </header>
 
     <nav>
-         <ul>
+         <ul class="tab-desk">
             <li> <a href="index.html">Home</a></li> <br>
             <li><a href="past.html">Past Work</a></li> <br>
             <li><a href="references.html">References</a></li> <br>
@@ -45,6 +38,18 @@ Date: 01/23/2023
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="past.html">Past Work</a>
+                <a href="references.html">References</a>
+                <a href="links">Website Links</a>
+                <a href="contact.html">Contact</a>
+            </div>
+                <a class="nav-icon" onclick="hamburger()">
+                    <div id="icon">&#9776;</div>
+                </a>
+        </nav>
 
     </nav>
 
@@ -59,5 +64,6 @@ Date: 01/23/2023
         <a href="william.rudisill.32@student.prcc.edu" target="_blank">william.rudisill.32@student.prcc.edu</a>
     </footer>
 
+    <script src="scripts/script.js"></script>
 </body>
 </html>
