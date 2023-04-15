@@ -94,7 +94,14 @@ Style Rules for tablet-desktop
     .mobile {
         display: none;
     }
+    
+    .mobile-nav {
+        display: none;
+    }
 
+    .nav-icon {
+        dispplay: none;
+    }
 
     nav {
         background: linear-gradient(#49A078, #9CC5A1);
