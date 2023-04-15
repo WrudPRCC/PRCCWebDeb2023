@@ -46,15 +46,46 @@ Style rules for mobile viewport
         display: none;
     }
 
-    #links article {
+    #links-grid article {
         padding: 0;
         margin: 0;
+    }
+
+    #links-grid article:hover {
+        background: #DCE1DE;
+        margin: 3%;
+        padding: 2%;
     }
 
     nav li {
         padding: 1%;
     }
+
+    .mobile-nav a {
+        color: #fff;
+        text-align: center;
+        font-size: 2em;
+        text-decoration: none;
+        padding: 3%;
+        display: block;
+    }
+     
+    .mobile-nav a.nav-icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #f6eee4;
+        padding: 2%;
+    }
+     
+    .nav-icon div { 
+        height: 40px;
+        width: 40px;
+        color: #2a1f14; 
+    } 
 }
+
 /*
 Style Rules for tablet-desktop
 */
@@ -69,13 +100,25 @@ Style Rules for tablet-desktop
         background: linear-gradient(#49A078, #9CC5A1);
     }
 
-    #links article:hover {
-        background: #DCE1DE;
+    nav li a {
+        text-shadow: 2px 2px 3px #216869;
     }
 
-    #links article {
-        text-shadow: 2px 2px 4px #DCE1DE;
+    nav li a:hover {
+        color: #216869;
+        text-shadow: 2px 2px 2px #DCE1DE;
     }
+    #links-grid article:hover {
+        background: #DCE1DE;
+        box-shadow: 5px 5px #49A078;
+        margin: 3%;
+        padding: 2%;
+    }
+
+    #links-grid article {
+        box-shadow: 5px 5px #216869;
+    }
+
 
     #portrait
 {
@@ -171,7 +214,7 @@ footer a
 }
 
 /* style for links id */
-#links article {
+#links-grid article {
     display: inline-grid;
     background-color: #49A078;
     margin: 3%;
@@ -188,6 +231,7 @@ table {
 
 thead {
     background-color: #216869;
+    font-weight: bold;
 }
 
 tbody {
@@ -195,7 +239,7 @@ tbody {
 }
 
 tbody > tr:nth-child(odd) {
-    background-color: #49A078
+    background-color: #49A078;
 }
 
 
