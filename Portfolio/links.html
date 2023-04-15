@@ -27,7 +27,7 @@ Date: 01/23/2023
     </header>
 
     <nav>
-        <ul>
+        <ul class="tab-desk">
             <li> <a href="index.html">Home</a></li> <br>
             <li><a href="past.html">Past Work</a></li> <br>
             <li><a href="references.html">References</a></li> <br>
@@ -35,12 +35,23 @@ Date: 01/23/2023
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
-
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="past.html">Past Work</a>
+                <a href="references.html">References</a>
+                <a href="links">Website Links</a>
+                <a href="contact.html">Contact</a>
+            </div>
+                <a class="nav-icon" onclick="hamburger()">
+                    <div id="icon">&#9776;</div>
+                </a>
+        </nav>
     </nav>
 
 <!--This main element will provide all of the important information for the page-->
     <main>
-        <section id="links">
+        <section id="links-grid">
             <p>This page provides links to my past websites!</p>
             <ul>
                 <article>
@@ -59,6 +70,15 @@ Date: 01/23/2023
                 <li><a href="">(Link to Future Project)</a></li>
                 </article>
             </ul>
+        </section>
+        <section>
+            <h3>Feeling Bored? Try some Music!
+            <h4>Airport Lounge</h4>
+            <audio controls>
+                    <source src="media/Airport-Lounge.mp3" type="audio/mpeg"/>
+                    <source src="media/Airport-Lounge.ogg" type="audio/ogg" />
+                    <pYour browser does not support this audio element</p>
+            </audio>
         </section>
     </main>
 <br>
