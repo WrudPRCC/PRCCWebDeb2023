@@ -8,6 +8,7 @@ Date: 01/23/2023
 <head>
     <title>Portfolio Template</title>
     <meta charset="utf-8">
+    <meta name="description" content="Page containing links to previously completed websites">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,24 +24,24 @@ Date: 01/23/2023
         <h1>Henry Rudisill</h1>
         <figure>
             <figcaption>"Every Step is a New Adventure!"</figcaption>
-        <figure>
+        </figure>
     </header>
 
     <nav>
         <ul class="tab-desk">
-            <li> <a href="index.html">Home</a></li> <br>
-            <li><a href="past.html">Past Work</a></li> <br>
-            <li><a href="references.html">References</a></li> <br>
-            <li> <a href="links.html">Website Links</a></li> <br>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="past.html">Past Work</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="links.html">Website Links</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
         <nav class="mobile-nav">
-            <div id="nav-links">
+            <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="past.html">Past Work</a>
                 <a href="references.html">References</a>
-                <a href="links">Website Links</a>
+                <a href="links.html">Website Links</a>
                 <a href="contact.html">Contact</a>
             </div>
                 <a class="nav-icon" onclick="hamburger()">
@@ -51,33 +52,31 @@ Date: 01/23/2023
 
 <!--This main element will provide all of the important information for the page-->
     <main>
-        <section id="links-grid">
+        <div id="links-grid">
             <p>This page provides links to my past websites!</p>
-            <ul>
-                <article>
-                <li><a href="">This Website!</a></li>
+                <article na>
+                <a href="index.html">This Website!</a>
                 </article>
                 <article>
-                <li><a href="">(Link to Future Project)</a></li>
+                <a href="">(Link to Future Project)</a>
                 </article>
                 <article>
-                <li><a href="">(Link to Future Project)</a></li>
+                <a href="">(Link to Future Project)</a>
                 </article>
                 <article>
-                <li><a href="">(Link to Future Project)</a></li>
+                <a href="">(Link to Future Project)</a>
                 </article>
                 <article>
-                <li><a href="">(Link to Future Project)</a></li>
+                <a href="">(Link to Future Project)</a>
                 </article>
-            </ul>
-        </section>
+            </div>
         <section>
-            <h3>Feeling Bored? Try some Music!
+            <h3>Feeling Bored? Try some Music!</h3>
             <h4>Airport Lounge</h4>
             <audio controls>
                     <source src="media/Airport-Lounge.mp3" type="audio/mpeg"/>
                     <source src="media/Airport-Lounge.ogg" type="audio/ogg" />
-                    <pYour browser does not support this audio element</p>
+                    <p>Your browser does not support this audio element</p>
             </audio>
         </section>
     </main>
@@ -85,7 +84,11 @@ Date: 01/23/2023
 <br>
     <footer>
         <a href="william.rudisill.32@student.prcc.edu" target="_blank">william.rudisill.32@student.prcc.edu</a>
+        <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="images/f_logo_RGB-Blue_58.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img class="linkedin" src="images/LI-In-Bug.png" alt="LinkedIn"></a>
+        <a href="https://www.twitter.com/" target="_blank"><img class="twitter" src="images/twitter.png" alt="Twitter"></a>
     </footer>
 
+    <script src="scripts/script.js"></script>
 </body>
 </html>
