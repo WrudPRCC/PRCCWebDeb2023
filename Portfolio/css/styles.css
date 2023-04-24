@@ -7,7 +7,8 @@ Date: 02/21/2023
 /*
 CSS Reset
 */
-body, header, nav, main, footer, h1, h2, figure, figcaption, #links, #links article, #links article:hover, #portrait, #Past, ul, li, li a, .mobile, .tab-desk, nav ul, nav li a
+body, header, nav, main, footer, h1, h2, figure, figcaption, #links, #links article, 
+#links article:hover, #portrait, #Past, ul, li, li a, .mobile, .tab-desk, nav ul, nav li a
 {
     margin: 0;
     padding: 0;
@@ -37,107 +38,6 @@ img
     max-width: 300px;
     max-height: 400px;
 }
-
-/*
-Style rules for mobile viewport
-*/
-@media screen and ( max-width: 767px) {
-    .tab-desk {
-        display: none;
-    }
-
-    #links-grid article {
-        padding: 0;
-        margin: 0;
-    }
-
-    #links-grid article:hover {
-        background: #DCE1DE;
-        margin: 3%;
-        padding: 2%;
-    }
-
-    nav li {
-        padding: 1%;
-    }
-
-    .mobile-nav a {
-        color: #fff;
-        text-align: center;
-        font-size: 2em;
-        text-decoration: none;
-        padding: 3%;
-        display: block;
-    }
-     
-    .mobile-nav a.nav-icon {
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #f6eee4;
-        padding: 2%;
-    }
-     
-    .nav-icon div { 
-        height: 40px;
-        width: 40px;
-        color: #2a1f14; 
-    } 
-}
-
-/*
-Style Rules for tablet-desktop
-*/
-@media screen and (min-width: 768px) {
-
-    .mobile {
-        display: none;
-    }
-    
-    .mobile-nav {
-        display: none;
-    }
-
-    .nav-icon {
-        dispplay: none;
-    }
-
-    nav {
-        background: linear-gradient(#49A078, #9CC5A1);
-    }
-
-    nav li a {
-        text-shadow: 2px 2px 3px #216869;
-    }
-
-    nav li a:hover {
-        color: #216869;
-        text-shadow: 2px 2px 2px #DCE1DE;
-    }
-    #links-grid article:hover {
-        background: #DCE1DE;
-        box-shadow: 5px 5px #49A078;
-        margin: 3%;
-        padding: 2%;
-    }
-
-    #links-grid article {
-        box-shadow: 5px 5px #216869;
-    }
-
-
-    #portrait
-{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 36%;
-    max-width: 300px;
-    max-height: 400px;
-}
-
-}
-
 
 /*
 Style rules for header content
@@ -175,7 +75,8 @@ nav li
 {
     text-decoration: none;
     color: #DCE1DE;
-    display: inline-block;
+    display: block;
+    padding: 1%;
 }
 nav li a
 {
@@ -212,6 +113,7 @@ Style Rules for footer content
 footer
 {
     font-family: Oxygen, Helvetica, sans-serif;
+    font-size: .90em;
 }
 footer a
 {
@@ -221,14 +123,14 @@ footer a
 }
 
 /* style for links id */
-#links-grid article {
+#links-grid article{
     display: inline-grid;
     background-color: #49A078;
     margin: 3%;
     padding: 2%;
-    grid-column: 1/span 2;
+    grid-column: 1/span 3;
     grid-row: 1/span 2;
-    grid-gap: 20px 20px;
+    list-style-type: none;
 }
 
 /* Sty;e rules for table */
@@ -276,4 +178,122 @@ fieldset > legend {
     text-align: center;
     text-decoration: none;
     font-size: 15px
+}
+
+/*
+Style rules for mobile viewport
+*/
+@media screen and ( max-width: 767px) {
+    .tab-desk {
+        display: none;
+    }
+
+    #links-grid article {
+        padding: 2%;
+        margin: 3%;
+    }
+
+    #links-grid article:hover {
+        background: #DCE1DE;
+        margin: 3%;
+        padding: 2%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-nav a {
+        color: #fff;
+        text-align: center;
+        font-size: 2em;
+        text-decoration: none;
+        padding: 2%;
+        display: block;
+    }
+     
+    .mobile-nav a.nav-icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #DCE1DE;
+        padding: 2%;
+    }
+     
+    .nav-icon div { 
+        display: block;
+        height: 40px;
+        width: 40px;
+        color: #1F2421; 
+    } 
+}
+
+/*
+Style Rules for tablet-desktop
+*/
+@media screen and (min-width: 768px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+    .nav-links {
+    display: none;
+}
+    nav {
+        background: linear-gradient(#49A078, #9CC5A1);
+    }
+
+    nav li a {
+        text-shadow: 2px 2px 3px #216869;
+    }
+
+    nav li a:hover {
+        color: #216869;
+        text-shadow: 2px 2px 2px #DCE1DE;
+    }
+    #links-grid article:hover {
+        background: #DCE1DE;
+        box-shadow: 5px 5px #49A078;
+        margin: 3%;
+        padding: 2%;
+    }
+
+    #links-grid article {
+        box-shadow: 5px 5px #216869;
+    }
+
+
+    #portrait
+{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 36%;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+}
+
+/* Logo Style Rules */
+.facebook {
+    height: 75px;
+    width: 75px;
+    margin: 18.75px;
+}
+
+.linkedin {
+    border-radius: 0px;
+    height: 75px; 
+    margin: 18.75px;
+}
+
+.twitter {
+    border-radius: 0px;
+    height: 75px;
+    margin: 18.75px;
 }
